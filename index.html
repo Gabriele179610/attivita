@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Activity Tracker</title>
+  <meta name="theme-color" content="#2f6f53" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Attività" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // apply the saved theme before the page paints, to avoid a flash
+    try { var t = localStorage.getItem("activity-tracker.theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="app"><noscript>Questa app richiede JavaScript.</noscript></div>
+  <div id="sheets"></div>
+  <div id="toasts" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
