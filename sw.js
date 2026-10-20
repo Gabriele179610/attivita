@@ -1,7 +1,7 @@
 // Service worker: lets the app open fast and even offline (the app files only).
 // Data requests to Supabase are NEVER cached: they always go to the network,
 // so nothing can look saved when it isn't.
-const VERSION = "20261019180252";
+const VERSION = "20261020064231";
 const CACHE = "activity-tracker-" + VERSION;
 const APP_FILES = ["./", "index.html", "app.js", "styles.css", "config.js", "manifest.webmanifest", "icon-192.png", "apple-touch-icon.png"];
 
